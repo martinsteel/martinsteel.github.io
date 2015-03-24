@@ -1,0 +1,26 @@
+encoding: utf-8
+timezone: Europe/London
+
+title : Martin Steel
+tagline: The ramblings of a Manchester based .NET developer
+author : Martin Steel
+name : Martin Steel
+email : martin@martinsteel.co.uk
+github : martinsteel
+twitter : martin_steel
+
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+markdown: redcarpet
+
+permalink: /:categories/:year/:title
+
+defaults:
+ -
+  scope:
+    path: "" # empty string for all files
+  values:
+    layout: "post"

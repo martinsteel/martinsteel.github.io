@@ -12,7 +12,7 @@ We'll start of with the basic classes our service depends upon:
 
 * A basic reposity style setup that would normally talk to your database.
 
-``` language-csharp
+{% highlight c# %}
 public interface IWidgetService  
 {
     int CountWidgets();
@@ -26,10 +26,11 @@ public class WidgetService : IWidgetService
         return 5;
     }
 }
-```
+{% endhighlight %}
+
 * A processing class that makes use of your repository. We'll make use of constructor injection here.
 
-``` language-csharp
+``` c#
 public class WidgetProcessor  
 {
     private IWidgetService _widgetService;
@@ -45,10 +46,12 @@ public class WidgetProcessor
     }
 }
 ```
+
 ##Before dependency injection
 
 Here's a basic (and completely useless) Windows service that just instantiates classes when required.
-``` language-csharp
+
+``` c#
 public class WindowsService : ServiceBase  
 {
     public WindowsService()
@@ -66,7 +69,8 @@ public class WindowsService : ServiceBase
 Use NuGet to add the Ninject reference to your project
 
 Then add a class that inherits from `NinjectModule` - such as the following - that sets up mapping of your interfaces to concrete classes.
-``` language-csharp
+
+``` c#
 class NinjectBindings : Ninject.Modules.NinjectModule  
 {
     public override void Load()
@@ -75,8 +79,10 @@ class NinjectBindings : Ninject.Modules.NinjectModule
     }
 }
 ```
+
 Add a Ninject kernel in to your Windows service ready for dependency injection.
-``` language-csharp
+
+``` c#
 public class WindowsService : ServiceBase  
 {
     public WindowsService()
@@ -93,10 +99,12 @@ public class WindowsService : ServiceBase
     /* lots of missing code */
 }
 ```
+
 Inject your dependencies
 
 So this is your final change, get rid of that `WidgetService` instance.
-``` language-csharp
+
+``` c#
 public class WindowsService : ServiceBase  
 {
     public WindowsService()
