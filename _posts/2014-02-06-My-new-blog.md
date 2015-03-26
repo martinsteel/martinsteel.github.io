@@ -1,3 +1,7 @@
+---
+title: My new blog
+---
+
 So I thought I'd try again at this blogging lark. I expect the novelty to wear off within a few weeks and this content will then languish here ignored, but for now I've got to at least start with good intentions.
 
 In an effort to keep my interest going a little longer than last time I thought I'd try out something a bit different to the LAMP stack I've been ignoring for the last few years.

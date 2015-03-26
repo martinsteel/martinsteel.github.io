@@ -1,3 +1,7 @@
+---
+title: Now powered by Jekyll
+---
+
 For my first attempt at blogging I went with the industry heavyweight: WordPress. In general I'd sum it up as annoying. Whilst it's amazingly powerful and flexible the editor has a nasty habit of mangling content and theming it involves PHP, it also involves faffing around with various plugins if you want decent performance.
 
 Next I gave [Ghost](https://ghost.org/) a try, I really like the admin UI, writing posts in Markdown is great and the default theme is lovely, however I went with the self hosted option and keeping it up to date on Azure was more hassle than it was worth. I might give Ghost another try once it hits version 1.

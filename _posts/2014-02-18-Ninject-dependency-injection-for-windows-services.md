@@ -1,3 +1,8 @@
+---
+title: Ninject dependency injection for Windows services
+redirect_from: "/ninject-dependency-injection-for-windows-services"
+---
+
 If you've been using Ninject for years, this probably isn't the blog post for you. If however you're just staring out or have just been using it on the web it may be some use.
 
 At work we've been using Ninject in our .NET MVC web projects for a while now, our Windows services on the other hand are all a few years old and haven't really changed for a good while. They tend to just instantiate classes here and there making them nigh on untestable.
