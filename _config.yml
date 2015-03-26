@@ -1,26 +1,19 @@
-encoding: utf-8
-timezone: Europe/London
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-title : Martin Steel
-tagline: The ramblings of a Manchester based .NET developer
-author : Martin Steel
-name : Martin Steel
-email : martin@martinsteel.co.uk
-github : martinsteel
-twitter : martin_steel
+# Setup
+title:            Poole
+tagline:          The Jekyll Butler
+url:              http://getpoole.com
+paginate:         1
+baseurl:          /
+author:
+  name:           Mark Otto
+  url:            https://twitter.com/mdo
+  email:          markdotto@gmail.com
 
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-markdown: redcarpet
-
-permalink: /:categories/:year/:title
-
-defaults:
- -
-  scope:
-    path: "" # empty string for all files
-  values:
-    layout: "post"
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/poole/poole
