@@ -24,7 +24,7 @@ gems:
 
 # Setup
 title:            Martin Steel
-tagline:          The ramblings of a .NET developer
+tagline:          The ramblings of a Manchester based .NET developer
 url:              http://martinsteel.co.uk
 paginate:         5
 paginate_path:    "/blog/page/:num"

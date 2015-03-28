@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <header class="home-masthead">
+      <div class="home-masthead-content">
+        <h1 id="home-title" class="home-masthead-title">{{site.title}}
+          <small>{{site.tagline}}</small>
+        </h1>
+      </div>
+
+    </header>
+
+    {% include masthead.html %}
+
+    <div class="container content">
+      <main>
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+    </div>
+
+  </body>
+  {% include home-js.js %}
+</html>
