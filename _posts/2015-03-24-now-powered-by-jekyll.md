@@ -8,6 +8,6 @@ Next I gave [Ghost](https://ghost.org/) a try, I really like the admin UI, writi
 
 Which brought me on to [Github pages](https://pages.github.com/). They're powered by [Jekyll](http://jekyllrb.com/), support Markdown and HTML and best of all there's nothing to keep up to date.
 
-As you can see I haven't yet rolled out a super exciting design, for now I'm using a tweaked version of [Poole](http://getpoole.com) by [@mdo](https://twitter.com/mdo).
+I'm now trying to come up with an exciting design (not my strong point), for now I've come up with something based on [Poole](http://getpoole.com) by [@mdo](https://twitter.com/mdo).
 
 Lets see how long it lasts this time.
