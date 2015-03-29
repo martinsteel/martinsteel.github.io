@@ -487,6 +487,7 @@ a.pagination-item:hover {
 
 .links a {
   padding: 0 1rem;
+  text-decoration: none;
 }
 
 /* Footer */
