@@ -18,7 +18,8 @@ We'll start of with the basic classes our service depends upon:
 
 * A basic reposity style setup that would normally talk to your database.
 
-{% highlight c# %}
+
+``` csharp
 public interface IWidgetService  
 {
     int CountWidgets();
@@ -32,11 +33,11 @@ public class WidgetService : IWidgetService
         return 5;
     }
 }
-{% endhighlight %}
+```
 
 * A processing class that makes use of your repository. We'll make use of constructor injection here.
 
-``` c#
+``` csharp
 public class WidgetProcessor  
 {
     private IWidgetService _widgetService;
@@ -53,11 +54,11 @@ public class WidgetProcessor
 }
 ```
 
-##Before dependency injection
+## Before dependency injection
 
 Here's a basic (and completely useless) Windows service that just instantiates classes when required.
 
-``` c#
+``` csharp
 public class WindowsService : ServiceBase  
 {
     public WindowsService()
@@ -70,13 +71,14 @@ public class WindowsService : ServiceBase
     /* lots of missing code */
 }
 ```
-##Adding Ninject
+
+## Adding Ninject
 
 Use NuGet to add the Ninject reference to your project
 
 Then add a class that inherits from `NinjectModule` - such as the following - that sets up mapping of your interfaces to concrete classes.
 
-``` c#
+``` csharp
 class NinjectBindings : Ninject.Modules.NinjectModule  
 {
     public override void Load()
@@ -88,7 +90,7 @@ class NinjectBindings : Ninject.Modules.NinjectModule
 
 Add a Ninject kernel in to your Windows service ready for dependency injection.
 
-``` c#
+``` csharp
 public class WindowsService : ServiceBase  
 {
     public WindowsService()
@@ -110,7 +112,7 @@ Inject your dependencies
 
 So this is your final change, get rid of that `WidgetService` instance.
 
-``` c#
+``` csharp
 public class WindowsService : ServiceBase  
 {
     public WindowsService()
@@ -125,6 +127,7 @@ public class WindowsService : ServiceBase
     /* lots of missing code */
 }
 ```
+
 As you can see, we completely remove any reference of the WidgetService repository and instead ask Ninject for an instance of a WidgetProcessor.
 
 The mapping you set up in the NinjectBindings lets Ninject know which concrete classes you want in place of interfaces, so it will automatically create a WidgetService instance and pass in to the WidgetProcessor constructor leaving you with clean, testable code.

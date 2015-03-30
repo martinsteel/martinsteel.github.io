@@ -11,17 +11,17 @@ Up until version 5.5 PHP was distinctly lacking a simple idiot proof password ha
 
 In the case of the project I was porting it used the following password hashing function (with a few bits removed for clarity).
 
-``` language-php
+``` php
 function generate_salt() {
     $salt = '$2a$10$';
     $chars = './0123456789ABCDEFHIJKLMONPQRSTUVWXYZabcdefhijklmonpqrstuvwxyz';
     $chars_length = strlen( $chars ) - 1;
     for( $i = 0; $i < 21; $i++ ) {
-      $salt .= $chars[ rand( 0, $chars_length ) ];
+        $salt .= $chars[ rand( 0, $chars_length ) ];
     }
     $salt .= '$';
     return $salt;
-  }
+}
 
 $salt = generate_salt();
 $password_digest = crypt( $_POST['password'], $salt );
@@ -37,6 +37,8 @@ It then expects 22 (not 21 as generated in the example above) characters in the 
 
 It turns out on PHP 5.3 if you pass in an short salt such as the one generated above that consists of 21 valid characters and then a $ symbol it will return a hash anyway. The problem being these hashes won't work with other implementations and I had a few thousand paying customers who wouldn't be able to log in once the rewrite went live.
 
+_I'm not sure how the person who wrote the password hashing function ended up with the salt a character short with an extra $ on the end, I can only assume he mistakenly thought there should be a $ between the salt and hash, whereas in actual fact the fixed length salt makes any sort of separator unnecessary._
+
 ###What was PHP getting wrong?
 
 The PHP documentation states "Using characters outside of this range in the salt will cause crypt() to return a zero-length string", given the string wasn't zero length this obviously required more investiation.
@@ -47,7 +49,7 @@ Nothing jumped out in `crypt.c` but `crypt_blowfish.c` contains a a couple of li
 
 First there's the `BF_safe_atoi64` macro that converts ASCII characters in to integers, if it encounters a `$` symbol it breaks out of the calling loop.
 
-``` language-c
+``` c
 #define BF_safe_atoi64(dst, src) \
 { \
 tmp = (unsigned char)(src); \
@@ -59,9 +61,9 @@ if (tmp > 63) return -1; \
 }
 ```
 
-There's also the `BF_decode` which is used to convert the ASCII salt to bytes. This uses the `BF_safe_atoi64` macro above and then if the `$` checking has caused it not to extract the required salt length zero pads the resulting salt out to the required length.
+There's also  `BF_decode` which is used to convert the ASCII salt to bytes. This uses the `BF_safe_atoi64` macro above to convert the characters of the ASCII salt in to bytes and then zero pads the resulting salt out to the required length if it's too short.
 
-``` language-c
+``` c
 static int BF_decode(BF_word *dst, const char *src, int size)
 {
     unsigned char *dptr = (unsigned char *)dst;
@@ -84,18 +86,36 @@ static int BF_decode(BF_word *dst, const char *src, int size)
     } while (dptr < end);
 
     while (dptr < end) /* PHP hack */
-    {
-        printf("PHP Hack padding binary salt with 0\n");
-        *dptr++ = 0;
-    }
+            *dptr++ = 0;
+    
     return 0;
 }
 ```
-Now that looks like the caues of our problem. The `$` at the end of the salt is turning in to a zero byte.
 
-Confirming this might've involved attaching a debugger and steping through the code, however it's over 10 years since I last did any C programming and it was taking 10's of minutes each time to build the PHP source, so I cheated and extracted the relevant parts of the PHP source in to my own source files. I then threw away any references to other hashing algorithms, removed a load of C pre-processor directives (easier than working out where they're defined) and hacked together a simple test program.
+And that looks like the caues of the problem. The `$` at the end of the salt is turning in to a zero byte.
 
-You can [download the source](https://gist.github.com/martinsteel/ca4fbae9ef840ac8ab9b) if you'd like to take a look. Adding a printf on each instance of `/* PHP Hack */` gave the following output:
+Confirming this might've involved attaching a debugger and steping through the code, however it's over 10 years since I last did any C programming and it was taking 10's of minutes each time to build the PHP source, so I cheated and extracted the relevant parts of the PHP source in to my own source files. I then threw away any references to other hashing algorithms, removed a load of C pre-processor directives (easier than working out where they're defined) and hacked together this simple test program along with adding a simple printf to each instance of `/* PHP Hack */`.
+
+``` c
+#include <stdio.h>
+#include "crypt.c"
+ 
+int main(void)
+{
+    char *pass = "test";
+    int pass_len = sizeof(pass);
+    char *salt = "$2a$10$Z2RM.D9GFLcbORGVkI07s$"; // invalid
+    int salt_len = sizeof(salt);
+    char *result = NULL;
+ 
+    int retval = php_crypt(pass, pass_len, salt, salt_len, &result);
+ 
+    printf("Returned %d\nSalt: %s\nHash: %s\n", retval, salt, result);
+    return 0;
+} 
+```
+
+You can [download the full source](https://gist.github.com/martinsteel/ca4fbae9ef840ac8ab9b) if you'd like to take a look. Adding a printf on each instance of `/* PHP Hack */` gave the following output:
 
 ```
 BF_safe_atoi64 PHP hack
@@ -103,5 +123,14 @@ PHP Hack padding binary salt with 0
 Returned 0, Salt: $2a$10$Z2RM.D9GFLcbORGVkI07s$, Hash: $2a$10$Z2RM.D9GFLcbORGVkI07s.1H0hAeFXoZloOhosUbIEt6P0nDv0Ih6
 ```
 
-So we've hit a `$` character when converting ASCII to integers and then added a single zero byte to the end of the salt.
+So we've hit the `$` character when converting the ASCII salt to integers and added a single zero byte to the end of the salt giving us an invalid hash. 
 
+## To conclude
+
+While the hashes were being validated in PHP this wasn't a problem, PHP crypt always bodges the salt in the same way so comparisons worked as expected. However every other bcrypt implementation I could find bombed out when it found invalid characters in the salt preventing users from logging in.
+
+With the bug now traced I could try to reproduce it in C# and allow existing hashed passwords to be validated, I'll cover this in a follow up post soon.
+
+_As an aside, I've no idea why the PHP bcrypt implementation has these hacks to allow invalid salts. There's an [existing bug](https://bugs.php.net/bug.php?id=62488) about how salts are handled when they're too short, but it's been floating around since July 2012 without any comments._
+
+_Going forward this shouldn't catch people out so much as the new password hash function generates a correct salt for you._
