@@ -499,6 +499,19 @@ a.pagination-item:hover {
   text-decoration: none;
 }
 
+.links svg {
+  fill: #515151;
+}
+.links svg:hover {
+  fill: #268BD2;
+}
+
+@media (max-width: 30em) {
+  .links {
+    margin-top: 2rem;
+  }
+}
+
 /* Footer */
 .footer {
   margin-bottom: 1rem;
