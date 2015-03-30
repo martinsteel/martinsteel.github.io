@@ -359,7 +359,6 @@ tbody tr:nth-child(odd) th {
   text-decoration: underline;
 }
 
-/*@media (min-width: 30em) {*/
   .masthead-nav {
     position: absolute;
     right: 0;
@@ -368,7 +367,12 @@ tbody tr:nth-child(odd) th {
     margin-left: 1rem;
     margin-right: 0;
   }
-/*}*/
+@media (max-width: 30em) {
+  .masthead-nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
 
 /*
  * Posts and pages
