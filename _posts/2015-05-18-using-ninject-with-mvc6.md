@@ -12,15 +12,15 @@ The ASP.NET framework now supports DI out of the box in the [Microsoft.Framework
 
 The Ninject adapter package isn't yet available on NuGet so you'll need to add the ASP.NET 5 "master" branch feed from [MyGet](https://www.myget.org/gallery/aspnetmaster) to your Visual Studio NuGet package sources.
 
-1. In Visual Studio under Tools → Options → NuGet Package Manager add the feed 
+* In Visual Studio under Tools → Options → NuGet Package Manager add the feed 
 
   ```
   https://www.myget.org/F/aspnetmaster/
   ```
 
-2. Add the ```Microsoft.Framework.DependencyInjection.Ninject``` and ```Ninject``` packages to your project.json file (or use NuGet).
+* Add the ```Microsoft.Framework.DependencyInjection.Ninject``` and ```Ninject``` packages to your project.json file (or use NuGet).
 
-3. Set up Ninject in Startup.cs
+* Set up Ninject in Startup.cs
 
   ``` csharp
 // You probably need to change this return type - defaults to void
@@ -47,9 +47,9 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 
 At work we tend to use Ninject convention based binding as it saves manually listing all the Interface/Repository combinations (it can get a bit tedious). You essentially tell Ninject what namespaces to look in and it will bind all classes to their default interfaces.
 
-1. Add the ```ninject.extensions.conventions``` NuGet package
+* Add the ```ninject.extensions.conventions``` NuGet package
 
-2. Set up convention based binding in Startup.cs
+* Set up convention based binding in Startup.cs
 
 ``` csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)
