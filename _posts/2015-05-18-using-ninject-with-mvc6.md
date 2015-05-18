@@ -23,24 +23,24 @@ The Ninject adapter package isn't yet available on NuGet so you'll need to add t
 3. Set up Ninject in Startup.cs
 
   ``` csharp
-  // You probably need to change this return type - it defaults to void
-  public IServiceProvider ConfigureServices(IServiceCollection services)
-  {
-      // Add your various services such as MVC as normal
-      services.AddMvc();
-  
-      // Create a new Ninject kernel for your bindings
-      var kernel = new StandardKernel();
-  
-      // Set up your bindings for DI - I'm just using a ridiculously simple repository/interface
-      kernel.Bind<IFakeRepo>().To<FakeRepo>().InRequestScope();
-      
-      // Add all the ASP.NET services to your Ninject kernel
-      kernel.Populate(services);
-  
-      // Use Ninject to return an instance
-      return kernel.Get<IServiceProvider>();
-  }
+// You probably need to change this return type - defaults to void
+public IServiceProvider ConfigureServices(IServiceCollection services)
+{
+    // Add your various services such as MVC as normal
+    services.AddMvc();
+
+    // Create a new Ninject kernel for your bindings
+    var kernel = new StandardKernel();
+
+    // Set up your bindings for DI
+    kernel.Bind<IFakeRepo>().To<FakeRepo>().InRequestScope();
+    
+    // Add all the ASP.NET services to your Ninject kernel
+    kernel.Populate(services);
+
+    // Use Ninject to return an instance
+    return kernel.Get<IServiceProvider>();
+}
   ```
 
 ## Convention based binding
@@ -63,7 +63,7 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
     // Any repository will do here it's just to find the correct DLL.
     kernel.Bind(k => k.FromAssemblyContaining<FakeRepo>() 
         .SelectAllClasses()
-        // You can list multiple types here if you need to look in more than one namespace
+        // List multiple types here to look in more than one namespace
         .InNamespaceOf(typeof(FakeRepo)) 
         .BindDefaultInterfaces()
         .Configure(c => c.InRequestScope()));
