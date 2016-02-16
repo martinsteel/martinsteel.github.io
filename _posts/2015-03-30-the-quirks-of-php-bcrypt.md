@@ -12,6 +12,7 @@ Up until version 5.5 PHP was distinctly lacking a simple idiot proof password ha
 In the case of the project I was porting it used the following password hashing function (with a few bits removed for clarity).
 
 ``` php
+<?php
 function generate_salt() {
     $salt = '$2a$10$';
     $chars = './0123456789ABCDEFHIJKLMONPQRSTUVWXYZabcdefhijklmonpqrstuvwxyz';

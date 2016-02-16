@@ -13,8 +13,8 @@ defaults:
   values:
     layout:       "post"
 
-# kramdown:
-#   input:          GFM
+kramdown:
+  input:          GFM
 
 sass:
   sass_dir:       _scss
