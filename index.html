@@ -1,10 +1,35 @@
 ---
-layout: home
-title: Home
-section: home
+layout: default
+title: Martin Steel
+redirect_from: "/blog/"
 ---
 
-{% capture about_include %}{% include about.md %}{% endcapture %}
-<article class="page">
-  {{ about_include | markdownify }}
-</article>
+{% for post in paginator.posts %}
+    <article>
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  	     {% include date.html %}
+
+        {{ post.content }}
+    </article>
+{% endfor %}
+
+<div class="row paging">
+    <div class="col-md-6">
+        {% if paginator.next_page %}
+            <a class="pagination-item older" href="/page/{{paginator.next_page}}">
+                <svg class="icon icon-arrow-left2"><use xlink:href="/public/icons.svg#icon-arrow-left2"></use></svg>Older</a>
+        {% endif %}
+        &nbsp;
+    </div>
+    <div class="col-md-6 text-md-right">
+        {% if paginator.previous_page %}
+            {% if paginator.page == 2 %}
+                <a class="pagination-item newer" href="/">Newer<svg class="icon icon-arrow-right2"><use xlink:href="/public/icons.svg#icon-arrow-right2"></use></svg>
+                </a>
+            {% else %}
+                <a class="pagination-item newer" href="/page/{{paginator.previous_page}}">Newer<svg class="icon icon-arrow-right2"><use xlink:href="/public/icons.svg#icon-arrow-right2"></use></svg>
+                </a>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>

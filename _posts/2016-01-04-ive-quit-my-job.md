@@ -6,8 +6,9 @@ So today after 11 years of working at [Mediaburst](https://www.mediaburst.co.uk)
 It’s been a great place to work - that's why I’ve been there so long - but since they were taken over a year
 ago things just haven’t been the same. 
 
-So around October last year I started thinking about what should come next and stumbled accross 
-an <abbr title="Ask Me Anything">AMA</abbr> [on Reddit](https://www.reddit.com/r/IAmA/comments/3oc4cz/i_just_hiked_the_2189_mile_appalachian_trail_from/)
+So around October last year I started thinking about what should come next and stumbled accross an 
+<abbr title="Ask Me Anything" class="initialism">AMA</abbr> 
+[on Reddit](https://www.reddit.com/r/IAmA/comments/3oc4cz/i_just_hiked_the_2189_mile_appalachian_trail_from/) 
 by a guy who’d just finished walking the full length of [Appalachian Trail](https://en.wikipedia.org/wiki/Appalachian_Trail)
 in America. My initial thought was something along the lines of 
 “How the hell does anyone find a spare 6 months just to go for a walk?” and I thought nothing much more of it at the time. 

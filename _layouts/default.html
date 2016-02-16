@@ -4,16 +4,51 @@
   {% include head.html %}
 
   <body>
-
-    {% include masthead.html %}
-
-    <div class="container content">
-      <main>
-        {{ content }}
+	<nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about/">About me</a></li>
+                    </ul>	 
+                    <ul class="nav navbar-nav pull-xs-right">
+                        <li class="nav-item">
+                            <a class="" href="https://twitter.com/martin_steel" title="Twitter">
+                                <svg class="icon icon-twitter"><use xlink:href="/public/icons.svg#icon-twitter"></use></svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/martinsteel" title="Github">
+                                <svg class="icon icon-github3"><use xlink:href="/public/icons.svg#icon-github3"></use></svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.flickr.com/photos/martinsteel" title="Flickr">
+                                <svg class="icon icon-flickr2"><use xlink:href="/public/icons.svg#icon-flickr2"></use></svg>
+                            </a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+    </nav>
+      <div class="container">
+          <div class="row">
+              <div class="col-md=12">
+                  <h1 class="display-1">Martin Steel</h1>
+              </div>
+          </div>
+      </div>
+      <main class="container">
+          <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                  {{ content }}
+              </div>
+          </div>
       </main>
-
-      {% include footer.html %}
-    </div>
-    {% include analytics.html %}
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+      {% include analytics.html %}
   </body>
 </html>

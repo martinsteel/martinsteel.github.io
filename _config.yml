@@ -1,6 +1,5 @@
 # Permalinks
 permalink:        /blog/:categories/:year/:title
-relative_permalinks: true
 
 # Site-wide settings
 encoding:         utf-8
@@ -14,20 +13,23 @@ defaults:
   values:
     layout:       "post"
 
-markdown: redcarpet
-kramdown:
-  input: GFM
+# kramdown:
+#   input:          GFM
+
+sass:
+  sass_dir:       _scss
 
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Setup
 title:            Martin Steel
 tagline:          The ramblings of a Manchester based .NET developer
 url:              http://martinsteel.co.uk
 paginate:         5
-paginate_path:    "/blog/page/:num"
+paginate_path:    "/page/:num"
 baseurl:          /
 author:
   name:           Martin Steel
