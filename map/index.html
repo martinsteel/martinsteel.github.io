@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<style>
+      #map {
+        height: 100%;
+        background: pink;
+        box-sizing: content-box;
+        border: 10px solid red;
+        min-height: 600px;
+      }
+    </style>
+
+
+<div id="map"></div>
+<script>
+    var map;
+    var startPoint = {lat: 34.6267, lng: -84.1936};
+    var finishPoint = {lat: 45.9044, lng: -68.9213};
+    
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: startPoint,
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+            streetViewControl: false
+        });
+        
+        var bounds = new google.maps.LatLngBounds(startPoint, finishPoint);
+        
+        var startMarker = new google.maps.Marker({
+            position: startPoint,
+            map: map,
+            title: 'Springer Mountain'
+        });
+        var finishMarker = new google.maps.Marker({
+            position: finishPoint,
+            map: map,
+            title: 'Mount Katahdin'
+        });   
+        map.fitBounds(bounds);
+        
+        getJson();
+    }  
+            
+    function getJson(){
+        var ssKey = '1pa6uplMlfUfu1qXAzgpbnBwOpR0tKtcXssd30ZTCCD4';
+        // Retrieve the JSON feed.
+        var script = document.createElement('script');
+        script.setAttribute('src', 'http://spreadsheets.google.com/feeds/list/'
+                    + ssKey + '/default/public/values?alt=json-in-script&callback=loadMapJson');
+        script.setAttribute('id', 'jsonScript');
+        script.setAttribute('type', 'text/javascript');
+        document.documentElement.firstChild.appendChild(script);
+    }
+    
+    function loadMapJson(json){
+        var points = Array();
+        var bounds = map.getBounds();
+        
+        for (var i = 0; i < json.feed.entry.length; i++) {
+            var point = new google.maps.LatLng(parseFloat(json.feed.entry[i].gsx$lat.$t),
+                                                parseFloat(json.feed.entry[i].gsx$long.$t));
+            points.push(point);
+            bounds.extend(point);
+        }
+        var polyLine = new google.maps.Polyline({
+            path: points,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+        polyLine.setMap(map);
+        map.fitBounds(bounds);
+    }
+        
+        
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUfMSybn0O-v5caqWoMG-5H8VGL68fxVk&callback=initMap" async defer></script>
