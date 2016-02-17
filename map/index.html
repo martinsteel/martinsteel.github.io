@@ -5,13 +5,20 @@ layout: default
 <style>
       #map {
         height: 100%;
-        background: pink;
+        background: #fff;
         box-sizing: content-box;
-        border: 10px solid red;
+        /*border: 10px solid red;*/
         min-height: 600px;
+        margin-bottom: 3rem;
       }
-    </style>
+      
+      h2.pagetitle{
+          color: #fff;
+          text-align: center;
+      }
+</style>	
 
+<h2 class="pagetitle">See where I’m up to hiking the Appalachian Trail</h2>
 
 <div id="map"></div>
 <script>
@@ -34,10 +41,23 @@ layout: default
             map: map,
             title: 'Springer Mountain'
         });
+        var startWindow = new google.maps.InfoWindow({
+            content: '<h2>Springer Mountain</h2><p>Start of the Appalachian Trail</p>'
+        });
+        startMarker.addListener('click', function(){
+            startWindow.open(map, startMarker);
+        });
+        
         var finishMarker = new google.maps.Marker({
             position: finishPoint,
             map: map,
             title: 'Mount Katahdin'
+        });
+        var finishWindow = new google.maps.InfoWindow({
+            content: '<h2>Mount Katahdin</h2><p>End of the Appalachian Trail</p>'
+        });
+        finishMarker.addListener('click', function(){
+            finishWindow.open(map, finishMarker);
         });   
         map.fitBounds(bounds);
         
@@ -56,6 +76,10 @@ layout: default
     }
     
     function loadMapJson(json){
+        if(typeof(json.feed.entry)  === "undefined"){
+            return;
+        }
+        
         var points = Array();
         var bounds = map.getBounds();
         
@@ -75,6 +99,21 @@ layout: default
 
         polyLine.setMap(map);
         map.fitBounds(bounds);
+        var currentMarker = new google.maps.Marker({
+            position: {
+                lat: parseFloat(json.feed.entry[json.feed.entry.length-1].gsx$lat.$t),
+                lng: parseFloat(json.feed.entry[json.feed.entry.length-1].gsx$long.$t)
+            },
+            map: map,
+            title: 'Today'
+        });
+        var currentWindow = new google.maps.InfoWindow({
+            content: '<h2>Last location</h2><p>'+json.feed.entry[json.feed.entry.length-1].gsx$date.$t+'</p>'
+        });
+        currentMarker.addListener('click', function(){
+            currentWindow.open(map, currentMarker);
+        });
+        
     }
         
         
