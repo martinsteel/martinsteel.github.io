@@ -40,7 +40,7 @@ It turns out on PHP 5.3 if you pass in an short salt such as the one generated a
 
 _I'm not sure how the person who wrote the password hashing function ended up with the salt a character short with an extra $ on the end, I can only assume he mistakenly thought there should be a $ between the salt and hash, whereas in actual fact the fixed length salt makes any sort of separator unnecessary._
 
-###What was PHP getting wrong?
+### What was PHP getting wrong?
 
 The PHP documentation states "Using characters outside of this range in the salt will cause crypt() to return a zero-length string", given the string wasn't zero length this obviously required more investiation.
 
