@@ -1,6 +1,7 @@
 ---
 title: About me
 layout: page
+description: More than you could possibly want to know about Martin Steel
 ---
 
 Hiya, I’m Martin Steel and up until recently I lived and worked in Manchester’s Northern Quarter, that’s in the 

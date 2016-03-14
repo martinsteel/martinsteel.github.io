@@ -3,7 +3,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    {% if page.layout == 'post' %}
+        <meta description="{{ page.excerpt | strip_html }}">
+    {% else %}
+        <meta description="{{ page.description }}">
+    {% endif %}
     <title>
         {{ page.title }} &middot; {{ site.title }}
     </title>
@@ -12,7 +16,7 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@martin_steel" />
         <meta name="twitter:title" content=" {{ page.title }}" />
-        <meta name="twitter:description" content="{{ page.excerpt }}" />
+        <meta name="twitter:description" content="{{ page.excerpt | strip_html }}" />
         {% comment %}
         <meta name="twitter:image" content="" />
         {% endcomment %} 
