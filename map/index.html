@@ -1,0 +1,122 @@
+---
+layout: default
+title: Appalachian Trail progress map
+---
+
+<style>
+      #map {
+        height: 100%;
+        background: #fff;
+        box-sizing: content-box;
+        /*border: 10px solid red;*/
+        min-height: 600px;
+        margin-bottom: 3rem;
+      }
+      
+      h2.pagetitle{
+          color: #fff;
+          text-align: center;
+      }
+</style>	
+
+<h2 class="pagetitle">See where I’m up to hiking the Appalachian Trail</h2>
+
+<div id="map"></div>
+<script>
+    var map;
+    var startPoint = {lat: 34.6267, lng: -84.1936};
+    var finishPoint = {lat: 45.9044, lng: -68.9213};
+    
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: startPoint,
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+            streetViewControl: false
+        });
+        
+        var bounds = new google.maps.LatLngBounds(startPoint, finishPoint);
+        
+        var startMarker = new google.maps.Marker({
+            position: startPoint,
+            map: map,
+            title: 'Springer Mountain'
+        });
+        var startWindow = new google.maps.InfoWindow({
+            content: '<h2>Springer Mountain</h2><p>Start of the Appalachian Trail</p>'
+        });
+        startMarker.addListener('click', function(){
+            startWindow.open(map, startMarker);
+        });
+        
+        var finishMarker = new google.maps.Marker({
+            position: finishPoint,
+            map: map,
+            title: 'Mount Katahdin'
+        });
+        var finishWindow = new google.maps.InfoWindow({
+            content: '<h2>Mount Katahdin</h2><p>End of the Appalachian Trail</p>'
+        });
+        finishMarker.addListener('click', function(){
+            finishWindow.open(map, finishMarker);
+        });   
+        map.fitBounds(bounds);
+        
+        getJson();
+    }  
+            
+    function getJson(){
+        var ssKey = '1pa6uplMlfUfu1qXAzgpbnBwOpR0tKtcXssd30ZTCCD4';
+        // Retrieve the JSON feed.
+        var script = document.createElement('script');
+        script.setAttribute('src', 'http://spreadsheets.google.com/feeds/list/'
+                    + ssKey + '/default/public/values?alt=json-in-script&callback=loadMapJson');
+        script.setAttribute('id', 'jsonScript');
+        script.setAttribute('type', 'text/javascript');
+        document.documentElement.firstChild.appendChild(script);
+    }
+    
+    function loadMapJson(json){
+        if(typeof(json.feed.entry)  === "undefined"){
+            return;
+        }
+        
+        var points = Array();
+        var bounds = map.getBounds();
+        
+        for (var i = 0; i < json.feed.entry.length; i++) {
+            var point = new google.maps.LatLng(parseFloat(json.feed.entry[i].gsx$lat.$t),
+                                                parseFloat(json.feed.entry[i].gsx$long.$t));
+            points.push(point);
+            bounds.extend(point);
+        }
+        var polyLine = new google.maps.Polyline({
+            path: points,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+        polyLine.setMap(map);
+        map.fitBounds(bounds);
+        var currentMarker = new google.maps.Marker({
+            position: {
+                lat: parseFloat(json.feed.entry[json.feed.entry.length-1].gsx$lat.$t),
+                lng: parseFloat(json.feed.entry[json.feed.entry.length-1].gsx$long.$t)
+            },
+            map: map,
+            title: 'Today'
+        });
+        var currentWindow = new google.maps.InfoWindow({
+            content: '<h2>Last location</h2><p>'+json.feed.entry[json.feed.entry.length-1].gsx$date.$t+'</p>'
+        });
+        currentMarker.addListener('click', function(){
+            currentWindow.open(map, currentMarker);
+        });
+        
+    }
+        
+        
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUfMSybn0O-v5caqWoMG-5H8VGL68fxVk&callback=initMap" async defer></script>

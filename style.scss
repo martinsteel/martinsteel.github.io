@@ -1,0 +1,104 @@
+---
+---
+
+$border: #ccc;
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/public/images/home_header.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 7rem;
+    font-family: Lato, sans-serif;
+}
+
+nav {
+    background: #fff;
+    border-bottom: 1px solid $border;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.55;
+}
+
+a {
+    color: rgb(20, 139, 41);
+}
+
+h1,h2,h3,h4,h5{
+    font-variant-ligatures: discretionary-ligatures contextual;
+    font-family: Josefin Slab, serif;
+    font-weight: 600;
+}
+
+h1.display-1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+article{
+    background: #fff;
+    padding: 1.8rem 2rem 1rem;
+    
+    margin-bottom: 4rem;
+    
+    &.page h1{
+        margin-bottom: 2rem;
+    }
+    
+    time {
+        margin-bottom: 2rem;
+        display: block;
+        color: #999;
+        font-size: 0.9rem;
+    }
+}
+
+.paging {
+    a {
+        color: #fff;
+        font-family: Josefin Slab, serif;
+        font-size: 1.5rem;
+    }
+    
+    margin-bottom: 2rem;
+}
+
+.icon {
+	display: inline-block;
+	width: 1.7rem;
+	height: 1.7rem;
+	fill: #999;//currentColor;
+    padding-top: 0.3rem;
+}
+.icon-twitter:hover{
+    fill: #55acee;
+}
+.icon-github3:hover{
+    fill: #000;
+}
+.icon-flickr2:hover{
+    fill: #ff0084;
+}
+
+.icon-arrow-left2, .icon-arrow-right2{
+    fill: #fff;
+    padding-top: 0.6rem;
+}
+
+.icon-arrow-left2{
+    margin-right: 0.3rem;
+}
+.icon-arrow-right2{
+    margin-left: 0.3rem;
+}
+
+pre.highlight {
+    background: #f7f7f9;
+    padding: 1rem;
+}
+
+@import "syntax";
