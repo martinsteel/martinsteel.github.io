@@ -19,4 +19,4 @@
 {% endif %}
 <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%A %-d" }}<sup>{{ ordinal }}</sup> {{ post.date | date: "%b %Y" }}</time>
 
-{% ending %}
+{% endif %}
