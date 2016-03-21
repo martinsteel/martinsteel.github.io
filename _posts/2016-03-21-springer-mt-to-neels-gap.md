@@ -9,7 +9,7 @@ title: "Days 1 to 3 Springer Mountain to Neel Gap"
 
 After a goodnights sleep and breakfast at [Hiker Hostel](http://hikerhostel.com) I decided to skip the 8 mile aproach trail up Springer Mountain and instead was shuttled up to a carpark about a mile below the peak (the +1 above).
 
-![Me at the summit of Springer Mountain](https://flic.kr/p/FpBQMk)
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/25865186381/in/album-72157663892918234/" title="Me at the start of the Appalachian Trail"><img src="https://farm2.staticflickr.com/1566/25865186381_989e0fd996_z.jpg" width="640" height="480" alt="Me at the start of the Appalachian Trail"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 A further 8 miles of ips and downs brought me to Hawk Mountsin Shelter, a surprisingly busy place to spend the night, also my first attempt at pitching my tent.
 
