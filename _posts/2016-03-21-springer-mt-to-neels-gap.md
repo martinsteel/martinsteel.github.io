@@ -33,4 +33,6 @@ Neels Gap has hot food, showers and laundry, and luckily for me, one of the guys
 
 ![Neels Gap cabin](https://flic.kr/p/FpBAMM)
 
-## Day 4 Preview: Nothing, I'm taking a day off, I slipped over on Saturday lunchtime and pulled a muscle in my knee, so taking a day off to let it rest
+## Day 4 Preview: Nothing
+
+I'm taking a day off, I slipped over on Saturday lunchtime and pulled a muscle in my knee, so taking a day off to let it rest
