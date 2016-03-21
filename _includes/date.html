@@ -1,3 +1,5 @@
+{% if post.date %}
+
 {% capture day %}{{ post.date | date: "%-d" }}{% endcapture %}
 {% capture dayLastTwoDigits %}{{ day | modulo: 100 }}{% endcapture %}
 {% if dayLastTwoDigits >= "11" and dayLastTwoDigits <= "13" %}
@@ -16,3 +18,5 @@
     {% endcase %}
 {% endif %}
 <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%A %-d" }}<sup>{{ ordinal }}</sup> {{ post.date | date: "%b %Y" }}</time>
+
+{% ending %}
