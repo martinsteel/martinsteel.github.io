@@ -28,7 +28,7 @@ At the end of the day we camped behind Plumorchard shelter and cooked beef and m
 
 Plenty more pointless ups and downs and once we made it to the shelter the camping area was full. Backtracking a short way up the trail found us an ideal sheltered spot for tents and a great view down in to a valley for sunset.
 
-
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/25901563660/in/album-72157663892918234/" title="Sunset on a ridge just before Muskrat Creek shelter"><img src="https://farm2.staticflickr.com/1483/25901563660_84dc923641_n.jpg" width="320" height="240" alt="Sunset on a ridge just before Muskrat Creek shelter"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ## Day 13: Carter Gap Shelter
 
