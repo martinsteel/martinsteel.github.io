@@ -66,8 +66,8 @@ In our hurry to outrun the rain we missed marking today's milestone, 100 miles o
 
 After another night of poor sleep in the shelter, this time we did get some lightning, I was up just after 7. A quick breakfast of coffee and porridge and we were off, or at least Cade and I were, Keba was waiting for the rain to stop and Whoobie hadn't surfaced.
 
-Around 800 foot down to start with and then up over an unnamed, but surprisingly difficult, before a long downhill run to Winding Stair Gap just before midday. As luck had it a Budget Inn shuttle turned up a few minutes later and took us in to Franklin - a stereotypical southern town - and somewhere to stay the night.
+Around 800 foot down to start with and then up over an unnamed, but surprisingly difficult, peak before a long downhill run to Winding Stair Gap just before midday. As luck had it a Budget Inn shuttle turned up a few minutes later and took us in to Franklin - a stereotypical southern town - and somewhere to stay the night.
 
 A little confusion later - the owner had one opinion of free rooms, the staff had another - we were checked in and off to a 50’s style diner for lunch.
 
-## Milage so far: 109.8 miles
+## Milage so far: 109.8 mile
