@@ -22,8 +22,6 @@ A few pretty steep uphill miles brought us out to a meadow with a clear path off
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/26255106836/in/dateposted-public/" title="Me on Siler Bald"><img src="https://farm2.staticflickr.com/1703/26255106836_fa107843d6_n.jpg" width="320" height="240" alt="Me on Siler Bald"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/26188707772/in/dateposted-public/" title="View from the top of Siler Bald"><img src="https://farm2.staticflickr.com/1513/26188707772_a6f009265a_n.jpg" width="320" height="71" alt="View from the top of Siler Bald"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
 A quick stop for lunch and onwards we went first down nearly 1000 foot and then back up the same.
 
 Our plan for the night was to head for a campsite just after Cold Spring shelter, but when we got the we were out of flat spots, luckily we'd just passed another suitable spot digit a peaceful nights sleep away from everyone else.
@@ -70,4 +68,4 @@ We spent the night in the shelter to avoid too much packing the following mornin
 
 A super short day of hiking (a nero in hiker speak) brought us in to the NOC in time for breakfast. Pancakes, sausages and eggs were so much better than instant porridge. We then spent the day lounging around and found laundry until Kiba and Whoobie arrived for dinner. Quickly followed by more lounging and a night in a very basic wooden cabin.
 
-## Milage so far: 137.3 miles in 20 days.
+## Milage so far: 137.3 miles in 20 days
