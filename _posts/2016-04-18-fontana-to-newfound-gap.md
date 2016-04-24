@@ -40,7 +40,7 @@ A lovely sunny day for hiking with a touch of wildlife thrown in. After hearing 
 - 32,719 steps
 - 416 floors
 
-A deer was eating from a bush as we left the shelter and didn't seem to care that Cafe and I were watching. 
+A deer was eating from a bush as we left the shelter and didn't seem to care that Cade and I were watching. 
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/25902442254/in/album-72157663892918234/" title="Deer just by Spence Field Shelter"><img src="https://farm2.staticflickr.com/1592/25902442254_b275e2f8c1_n.jpg" width="320" height="240" alt="Deer just by Spence Field Shelter"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
