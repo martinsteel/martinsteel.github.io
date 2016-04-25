@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gatlinburg to Hot Springs"
+title: "Days 32 to 38: Gatlinburg to Hot Springs"
 tags:
 ---
 
@@ -104,4 +104,4 @@ Heading down to the Spa we could see the smoke rising over the mountains from th
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/26572023521/in/album-72157663892918234/" title="Fire fighting helicopter coming into land at Hot Springs Spa"><img src="https://farm2.staticflickr.com/1521/26572023521_0b19f1e9fe_n.jpg" width="320" height="240" alt="Fire fighting helicopter coming into land at Hot Springs Spa"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-## Mileage so far: 274.1
+## Mileage so far: 274.
