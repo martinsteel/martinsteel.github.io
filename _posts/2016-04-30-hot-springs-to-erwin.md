@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Days 39 to 43: Hot Springs to Erwin"
+title: "Days 39 to 44: Hot Springs to Erwin"
 tags:
 ---
 
