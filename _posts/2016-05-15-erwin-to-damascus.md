@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Day 45 to 58: Erwin to Damascus
+title: "Day 45 to 58: Erwin to Damascus"
 ---
 
 ## Day 45: Campsite by Beauty Spot
@@ -167,4 +167,4 @@ The big upside of getting in to Damascus is I was able to have a chat with Joe f
 
 A simple day in town with something like 20,000 extra people (only 600ish people live here). I spent most of my day trying to win free hiking gear in raffles or catching up with hikers I've met before including the bunch I hiked with for a while: Cade, Reboot, Kiba, Link and Woobie.
 
-## Milage so far 510.
+## Milage so far 510
