@@ -39,6 +39,8 @@ That afternoon we passed The Captains - a local guy who lets hikers camp in his 
 
 From the Captains place it was less than three miles too the shelter, but they were some amazingly steep miles making for a significantly later than expected finish.
 
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/27316004022/in/album-72157663892918234/" title="Untitled"><img src="https://c7.staticflickr.com/8/7383/27316004022_236b597c3e_n.jpg" width="240" height="320" alt="Untitled"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 ## Day 71: Camping spot off VA630
 
 - Friday 27th May
@@ -51,6 +53,8 @@ Having walked uphill the night before we were already up by the ridge line which
 After a steep descent I stopped at War Spur shelter for lunch where some hikers who'd stayed at The Captains the previous night were cooking fish over the fire. 
 
 A long ascent and descent filled the afternoon bringing me to Laurel Creek shelter around 5. 007 and I decided it was a little early to stop for the day so decided to head for the next water source just by the VA630 road. A few hours later we get there and run in to Sneaky Pete and Costa Rica who had just hitched to town and back, while chatting a German lady joined us who was also looking to camp there, her name was Moonfire. A very short way up the hill Sneaky Pete found us a campsite and after a small hiccup where I pitched my tent under a dead tree so had to move it we settled in for a wet evening around the campfire.
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/26807220743/in/album-72157663892918234/" title="Untitled"><img src="https://c8.staticflickr.com/8/7510/26807220743_ddb703edea_n.jpg" width="320" height="240" alt="Untitled"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ## Day 72: Trout Creek campsite
 
@@ -65,6 +69,8 @@ This was the day I lost 007, Moonfire and I got slightly carried away distance w
 
 The day started with a reasonably short but steep uphill past Keffer Oak - the largest Oak tree on the southern AT - followed by flat looking terrain, however for the next few miles it was solely walking along a rocky ridge line. I stopped for a snack at the fork down to Sarver Hollow shelter and had a chat with Sonja and Bern (a German couple without trail names) mostly about whether any of us could be bothered with the mile round trip for water (we couldn't).  A further 4 miles of walking along the rocky ridge led to some slow going, especially as it was a long way down if I fell. At the end of the ridge section is a sign letting you know the ridge is the Eastern Continental Divide.
 
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/26806516824/in/album-72157663892918234/" title="Untitled"><img src="https://c1.staticflickr.com/8/7644/26806516824_2315154291_n.jpg" width="320" height="240" alt="Untitled"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 I made it to Niday shelter for about 3 and after spending a while pondering what to do Moonfire mentioned she was heading another 9 miles to Trout Creek (the only water source other than 2 miles away) which seemed as good an idea as any. 
 
 The first couple of miles were nice and easy but then it was up 1,500 foot in 2 miles and high temperatures with little tree cover. Luckily some kind soul had put a bench at the top of the hill and I just lay there resting for about 5 minutes before attempting the wide flatish trail ahead.
@@ -73,7 +79,11 @@ The first couple of miles were nice and easy but then it was up 1,500 foot in 2 
 
 At the end of the flat section was a short side trail to the Audie Murphy monument. Audie Murphy was the most decorated American soldier in World War II and died in a plane crash near that spot many years later.
 
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/27138547910/in/album-72157663892918234/" title="Untitled"><img src="https://c7.staticflickr.com/8/7551/27138547910_14770952e4_n.jpg" width="320" height="240" alt="Untitled"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 Just as I started the downhill after the monument I ran in to three guys heading south who mentioned there was trail magic at the bottom of the hill. Given the time I was expecting a cooler full of coke or something along those lines but it was still enough for me to speed up my descent. Just under 4 miles later as I got to the  bottom of the hill I could see people sitting around a fire and a gazebo with grill, seats and small crowd of hikers. Under the gazebo I discovered Grandma and Old Goat doing large scale trail magic. They were giving out hot dogs, soup, sandwiches, soda and beer to any hungry hikers who came near. They're a lovely retired couple whose daughter hiked the trail a couple of years ago and ever since they've been doing trail magic a few times a year. This time they'd been there since Tuesday feeding about 50 hikers a day.
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/27342867461/in/album-72157663892918234/" title="Untitled"><img src="https://c6.staticflickr.com/8/7346/27342867461_cdf21cf41d_n.jpg" width="320" height="240" alt="Untitled"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Once she heard my trail name Grandma mentioned they'd be doing pancakes for breakfast which was perfect as I'd planned to camp there anyway.
 
@@ -86,7 +96,13 @@ Once she heard my trail name Grandma mentioned they'd be doing pancakes for brea
 
 The day got off to a slightly later start than planned as just as I was about to leave camp I was offered more breakfast - scrambled eggs this time - as a follow up to my first breakfast of grits and pancakes. The aim for the day was to either reach the shelter just before McAfee Knob or to reach McAfee Knob in time for sunset and then stop at the next shelter.
 
-Once I'd said thank you and goodbye to Grandma and Old Goat the first 5 miles of the day were uphill and it was pretty warm up to Cove Mountain where there was a short side trail to Dragons Tooth. After returning from Dragons Tooth the guide just shows a couple of miles downhill. What it fails to show is that the first half mile or so involved heading down a rocky path with 6 foot drops in places. After that it flattens out to a reasonably pleasant downhill with just a few rocky patches.
+Once I'd said thank you and goodbye to Grandma and Old Goat the first 5 miles of the day were uphill and it was pretty warm up to Cove Mountain where there was a short side trail to Dragons Tooth. 
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/27380904766/in/album-72157663892918234/" title="Untitled"><img src="https://c7.staticflickr.com/8/7405/27380904766_1c99087ef4_n.jpg" width="240" height="320" alt="Untitled"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+After returning from Dragons Tooth the guide just shows a couple of miles downhill. What it fails to show is that the first half mile or so involved heading down a rocky path with 6 foot drops in places. After that it flattens out to a reasonably pleasant downhill with just a few rocky patches.
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/26806043634/in/album-72157663892918234/" title="Untitled"><img src="https://c3.staticflickr.com/8/7688/26806043634_40910fc919_n.jpg" width="240" height="320" alt="Untitled"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Conveniently the trail crosses a road a few miles after Dragons Tooth and there's a petrol station 0.2 miles away where I stopped for drinks and ice cream with some other hikers and caught up with Moonfire.
 
@@ -101,11 +117,19 @@ From Catawaba Creek at the bottom of the hill it again looked easy, a short uphi
 
 The highlight of the week was 1.7 miles in to the day, arriving at McAfee Knob. Standing on McAfee Knob is probably the most common photo on the trail, everyone sits or stands on the same bit of rock and has their photo taken from the left (Kathadin would be more popular but less people reach there). As you can see I'm highly original and have the same photo too 😀.
 
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/27342997541/in/album-72157663892918234/" title="Me on McAfee Knob"><img src="https://c6.staticflickr.com/8/7336/27342997541_1605445e6b_n.jpg" width="320" height="240" alt="Me on McAfee Knob"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 When I reached McAfee Knob with Moonfire the valleys below were full of clouds which added some real atmosphere to the views, and made you realise just how high up the edge was. An up side of camping so close the night before was we beat all the day hikers so it was lovely and peaceful up there. After about 45 minutes Moonfire headed off (she wanted to get in to town) and I just sat there enjoying the view for almost an hour more.
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/27380655446/in/album-72157663892918234/" title="Me on McAfee Knob"><img src="https://c7.staticflickr.com/8/7142/27380655446_71f5b01829_n.jpg" width="320" height="240" alt="Me on McAfee Knob"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/26805946934/in/album-72157663892918234/" title="View from McAfee Knob"><img src="https://c7.staticflickr.com/8/7064/26805946934_4803a61436_n.jpg" width="320" height="240" alt="View from McAfee Knob"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 After McAfee Knob I headed less than a mile downhill to Campbell Shelter for an early lunch as the next stretch of trail had seen some unwelcome bear activity. Hanging bear bags of food were taken 3 days on the run as was somebody's pack and people were being asked not to eat or sleep anywhere near Lamberts Meadow shelter.
 
 With the closed shelter my original plan of a very short (8 mile) day to give 007 a chance to catch up went out of the window so I did the ups and downs past Tinker cliffs and the shelter to what the trail maintainers called a temporary campsite. In actual fact it was a fairly steeply sloped road with only a couple of flattish spots but it was my home for the night.
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/martinsteel/27380765516/in/album-72157663892918234/" title="Rubbish temporary campsite"><img src="https://c5.staticflickr.com/8/7360/27380765516_2eed5a394e_n.jpg" width="320" height="240" alt="Rubbish temporary campsite"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ## Day 75: Troutville / Daleville
 
