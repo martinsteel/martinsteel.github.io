@@ -90,6 +90,16 @@ description: My progress along the Appalachian Trail
                                                 parseFloat(json.feed.entry[i].gsx$long.$t));
             points.push(point);
             bounds.extend(point);
+
+            var marker = new google.maps.Marker({
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    strokeColor: "blue"
+                },
+                position: point,
+                title: json.feed.entry[i].gsx$date.$t,
+                map: map
+            });
         }
         var polyLine = new google.maps.Polyline({
             path: points,
@@ -101,13 +111,16 @@ description: My progress along the Appalachian Trail
 
         polyLine.setMap(map);
         map.fitBounds(bounds);
+
+        
+
         var currentMarker = new google.maps.Marker({
             position: {
                 lat: parseFloat(json.feed.entry[json.feed.entry.length-1].gsx$lat.$t),
                 lng: parseFloat(json.feed.entry[json.feed.entry.length-1].gsx$long.$t)
             },
             map: map,
-            title: 'Today'
+            title: 'Most Recent'
         });
         var currentWindow = new google.maps.InfoWindow({
             content: '<h2>Last location</h2><p>'+json.feed.entry[json.feed.entry.length-1].gsx$date.$t+'</p>'
