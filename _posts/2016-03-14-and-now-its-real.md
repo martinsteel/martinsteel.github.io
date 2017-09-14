@@ -1,5 +1,6 @@
 ---
 title: And now it’s real
+category: appalachian-trail
 ---
 
 So my Appalachian Trail hike finally feels real, up until now it had just felt like an idea but now with 

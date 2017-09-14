@@ -1,5 +1,6 @@
 ---
 title: The quirks of PHP bcrypt
+category: code
 ---
 
 Last year while porting a PHP web app to .NET I found that none of the existing users could log in although both sites used bcrypt for password hashing.

@@ -1,5 +1,6 @@
 ---
 title: I finished the Appalachian Trail!
+category: appalachian-trail
 ---
 
 If you’ve read any of my blog posts in the last year you’ll know I planned to hike all 2,189 miles of the Appalachian Trail from Springer Mountain in Georgia to Mount Katahdin in Maine. If you read my last post you’ll even know I made it about a third of the way before going silent. Well I’m happy to say that at about lunchtime on 29th September 2016 I reached Katahdin’s summit.

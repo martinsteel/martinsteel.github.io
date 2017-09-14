@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Days 32 to 38: Gatlinburg to Hot Springs"
-tags:
+category: appalachian-trail
 ---
 
 ## Day 32: Icewater Spring Shelter

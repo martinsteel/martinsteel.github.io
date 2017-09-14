@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Days 59 to 67: Damascus to Pearisburg"
-tags:
+category: appalachian-trail
 ---
 
 ## Day 59: Camp just before Dickey Gap

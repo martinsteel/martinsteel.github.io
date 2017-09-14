@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "NOC to Fontana Dam"
-tags:
+category: appalachian-trail
 ---
 
 ## Day 21: Sassafras Gap shelter

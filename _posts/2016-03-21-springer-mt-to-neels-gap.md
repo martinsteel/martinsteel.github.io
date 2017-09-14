@@ -1,5 +1,6 @@
 ---
-title: "Days 1 to 3 Springer Mountain to Neel Gap"
+title: "Days 1 to 3: Springer Mountain to Neel Gap"
+category: appalachian-trail
 ---
 
 ## Day 1: Springer Mountain to Hawk Mountain Shelter

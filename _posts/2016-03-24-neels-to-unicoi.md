@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Days 5 to 7: Neels Gap to Unicoi Gap"
+category: appalachian-trail
 ---
 
 ## Day 5: Neels Gap to Hogpen Gap

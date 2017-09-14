@@ -1,5 +1,6 @@
 ---
 title: I’ve quit my job
+category: appalachian-trail
 ---
 
 So today after 11 years of working at [Mediaburst](https://www.mediaburst.co.uk) I handed in my notice. 

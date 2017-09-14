@@ -1,5 +1,6 @@
 ---
 title: Using Ninject with MVC6
+category: code
 ---
 
 *ASP.NET 5 and MVC 6 are currently release candidates so the information in this post may change.*

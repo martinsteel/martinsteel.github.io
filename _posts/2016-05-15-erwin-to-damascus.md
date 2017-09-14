@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Day 45 to 58: Erwin to Damascus"
+category: appalachian-trail
 ---
 
 ## Day 45: Campsite by Beauty Spot

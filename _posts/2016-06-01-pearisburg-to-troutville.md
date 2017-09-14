@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Days 68 to 76: Pearisburg to Troutville"
-tags:
+category: appalachian-trail
 ---
 
 *More pictures to follow, the Flickr app decided not to upload most of them.*

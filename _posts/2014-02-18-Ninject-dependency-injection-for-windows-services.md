@@ -1,7 +1,7 @@
 ---
 title: Ninject dependency injection for Windows services
-redirect_from: 
- - /ninject-dependency-injection-for-windows-services/
+redirect_from: /ninject-dependency-injection-for-windows-services/
+category: code
 ---
 
 If you've been using Ninject for years, this probably isn't the blog post for you. If however you're just staring out or have just been using it on the web it may be some use.

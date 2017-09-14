@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Days 25 to 31: Fontana Dam to Newfound Gap"
-tags:
+category: appalachian-trail
 ---
 
 ## Day 25 & 26: Fontana Village Resort

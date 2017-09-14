@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Unicoi Gap to Dicks Creek Gap"
-tags:
+category: appalachian-trail
 ---
 
 ## Day 8: Day off in Hiawassee

@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Dicks Creek Gap to Winding Stair Gap"
-tags:
+category: appalachian-trail
 ---
 
 ## Day 11: Dicks Creek Gap to Plumorchard Shelter

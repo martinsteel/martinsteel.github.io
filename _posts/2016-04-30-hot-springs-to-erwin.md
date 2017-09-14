@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Days 39 to 44: Hot Springs to Erwin"
-tags:
+category: appalachian-trail
 ---
 
 ## Day 39: Little Laurel Shelter
