@@ -18,8 +18,17 @@
         <meta name="twitter:title" content=" {{ page.title }}" />
         <meta name="twitter:description" content="{{ page.excerpt | strip_html }}" />
         {% comment %}
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:image" content="URL here" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:image" content="http://example.com/image.jpg" />
         {% endcomment %} 
+
+        <meta property="og:title" content="{{page.title}}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{site.url}}/{{page.url}}" />
+        <meta property="og:description" content="{{page.excerpt | stip_html}}" /> 
+        <meta property="og:site_name" content="Martin Steel" />
+        <meta property="fb:app_id" content="362448887519103" /> 
     {% endif %}
 
   <!-- CSS -->
