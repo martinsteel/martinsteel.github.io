@@ -29,7 +29,7 @@ gems:
 # Setup
 title:            Martin Steel
 tagline:          The ramblings of a Manchester based .NET developer
-url:              http://martinsteel.co.uk
+url:              http://www.martinsteel.co.uk
 paginate:         5
 paginate_path:    "/page/:num"
 baseurl:          /
