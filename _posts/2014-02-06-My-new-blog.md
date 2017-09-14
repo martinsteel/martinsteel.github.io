@@ -1,7 +1,6 @@
 ---
 title: My new blog
-redirect_from: 
- - /my-new-blog/
+redirect_from: /my-new-blog/
 ---
 
 So I thought I'd try again at this blogging lark. I expect the novelty to wear off within a few weeks and this content will then languish here ignored, but for now I've got to at least start with good intentions.

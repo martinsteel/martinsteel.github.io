@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Winding Stair Gap to the NOC"
-tags:
+category: appalachian-trail
 ---
 
 ## Day 16: Day off in Franklin

@@ -4,8 +4,10 @@ layout: page
 description: More than you could possibly want to know about Martin Steel
 ---
 
-Hiya, I’m Martin Steel and up until recently I lived and worked in Manchester’s Northern Quarter, that’s in the UK for those of you reading from distant shores. I’ve lived around Manchester since I started my degree at UMIST in late 2000, and have only just found a reason to leave.
+Hiya, I’m Martin Steel. I'm a Software Developer and Systems Administrator and I've lived in Manchester, UK, since moving here for university back in late 2000.
 
-From a professional point of view I’m a .NET Developer and System Administrator, and for 11 and a bit years up to March 2016 I worked at [Mediaburst](https://www.mediaburst.co.uk) where I spent my day writing [Clockwork](https://www.clockworksms.com) and [Textburst](https://www.textburst.com), babysitting servers, occasionally swearing at Cisco and HP networking kit and panicing when things broke.
+Depending upon when you're reading this, I'm either about to start, or currently working, as an ICT Engineer at [Halley research station](https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/halley/) in Antarctica.
 
-Since then I’ve [quit my job](/blog/2016/ive-quit-my-job), bought a load of hiking stuff, headed off to America and hiked the full 2,190 mile length of the Appalachian Trail.
+From a professional point of view I’ve been a .NET Developer and System Administrator for just over 13 years. Fist for 11 and a bit years at [Mediaburst](https://www.mediaburst.co.uk) where I spent my day writing [Clockwork](https://www.clockworksms.com) and [Textburst](https://www.textburst.com), babysitting servers, occasionally swearing at Cisco and HP networking kit and panicing when things broke. And then for a little under a year at Footasylum where I worked on internal tools.
+
+Outside of work, I [quit my job](/blog/2016/ive-quit-my-job/) back in March 2016, bought a load of hiking stuff, and spent 6.5 months hiking [all 2,189 miles](/blog/2016/i-finished-the-at/) of the Appalachian Trail.
