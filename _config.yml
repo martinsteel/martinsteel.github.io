@@ -21,22 +21,24 @@ kramdown:
 sass:
   sass_dir:       _scss
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-feed
 
 # Setup
 title:            Martin Steel
-tagline:          The ramblings of a Manchester based .NET developer
+description:      The ramblings of a Manchester based .NET developer
 url:              http://www.martinsteel.co.uk
 paginate:         5
 paginate_path:    "/page/:num"
-baseurl:          /
+baseurl:          ""
+
 author:
   name:           Martin Steel
-  url:            https://twitter.com/martin_steel
   email:          martin@martinsteel.co.uk
+  twitter:        martin_steel
 
 # Custom vars
 version:          1.0.0
